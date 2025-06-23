@@ -1,0 +1,40 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Dataflow 1",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "SalesLT Customer": {
+      "queryId": "51b2ea7f-27c1-4afa-9e1b-54e8e9088225",
+      "queryName": "SalesLT Customer",
+      "loadEnabled": false
+    },
+    "SalesLT CustomerAddress": {
+      "queryId": "2f7114c2-350a-4370-be97-017470ebf3ee",
+      "queryName": "SalesLT CustomerAddress"
+    },
+    "SalesLT SalesOrderHeader": {
+      "queryId": "f364f5c3-610d-4fb1-8287-7d49f032e90d",
+      "queryName": "SalesLT SalesOrderHeader"
+    },
+    "SalesLT Customer_DataDestination": {
+      "queryId": "80761849-4911-4fa5-80ad-7785a21541f3",
+      "queryName": "SalesLT Customer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "tinaserver.database.windows.net;testdb",
+      "kind": "SQL",
+      "connectionId": "{\"ClusterId\":\"b9499ff9-57d4-45c8-98da-555681e0960d\",\"DatasourceId\":\"7c117658-18ee-4ce0-b1e4-55a2b48c39c5\"}"
+    },
+    {
+      "path": "tinaserver.database.windows.net;customersalesdata",
+      "kind": "SQL",
+      "connectionId": "{\"ClusterId\":\"b9499ff9-57d4-45c8-98da-555681e0960d\",\"DatasourceId\":\"750d186c-e760-4100-ad45-fdcfd8f617c7\"}"
+    }
+  ]
+}
